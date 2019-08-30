@@ -1,13 +1,17 @@
 {
+	"name": "alvarogomezprado.es",
 	"version": 2,
 	"builds": [
-		{ "src": "static/css/*.css", "use": "@now/static" },
+		{ "src": "static/css/**/*.css", "use": "@now/static" },
+		{ "src": "static/js/**/*.js", "use": "@now/static" },
 		{ "src": "static/images/*", "use": "@now/static" },
+		{ "src": "static/lib/**/*", "use": "@now/static" },
 		{ "src": "static/favicon.ico", "use": "@now/static" },
 		{ "src": "*.py", "use": "@now/python" }
 	],
 	"routes": [
 		{ "src": "/", "dest": "/index.py" },
 		{ "src": "/(.*)", "dest": "/$1.py" }
-	]
+	],
+	"alias": ["alvarogomezprado.es"]
 }
