@@ -2,6 +2,8 @@
 	"version": 2,
 	"builds": [
 		{ "src": "static/css/*.css", "use": "@now/static" },
+		{ "src": "static/images/*", "use": "@now/static" },
+		{ "src": "static/favicon.ico", "use": "@now/static" },
 		{ "src": "*.py", "use": "@now/python" }
 	],
 	"routes": [

@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 @app.route('/', defaults={'path': ''})
 def homepage(path):
-    return render_template("main.html")
+    return render_template("main.html",title='Inicio')
     
 
 @app.route('/<path:path>')
