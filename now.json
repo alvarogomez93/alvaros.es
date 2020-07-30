@@ -11,6 +11,7 @@
 	],
 	"routes": [
 		{ "src": "/", "dest": "/index.py" },
+		{ "src": "/calculator", "dest": "/index.py" },
 		{ "src": "/(.*)", "dest": "/$1.py" }
 	],
 	"alias": ["alvarogomezprado.es"]
