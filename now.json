@@ -1,13 +1,13 @@
 {
-	"name": "alvarogomezprado.es",
+	"name": "alvaros.es",
 	"version": 2,
 	"builds": [
-		{ "src": "static/css/**/*.css", "use": "@now/static" },
-		{ "src": "static/js/**/*.js", "use": "@now/static" },
-		{ "src": "static/images/*", "use": "@now/static" },
-		{ "src": "static/lib/**/*", "use": "@now/static" },
-		{ "src": "static/favicon.ico", "use": "@now/static" },
-		{ "src": "*.py", "use": "@now/python" }
+		{ "src": "static/css/**/*.css", "use": "@vercel/static" },
+		{ "src": "static/js/**/*.js", "use": "@vercel/static" },
+		{ "src": "static/images/*", "use": "@vercel/static" },
+		{ "src": "static/lib/**/*", "use": "@vercel/static" },
+		{ "src": "static/favicon.ico", "use": "@vercel/static" },
+		{ "src": "*.py", "use": "@vercel/python" }
 	],
 	"routes": [
 		{ "src": "/", "dest": "/index.py" },
